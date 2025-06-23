@@ -69,17 +69,24 @@ const DashboardScreen = ({ navigation }) => {
             <View style={styles.actionButtons}>
               <TouchableOpacity
                 style={styles.actionButton}
-                onPress={() => navigation.navigate('MarkAttendance')}
+                onPress={() => navigation.navigate('MarkAttendanceScreen')}
               >
                 <Text style={styles.actionIcon}>📝</Text>
                 <Text style={styles.actionText}>Mark Attendance</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={styles.actionButton}
-                onPress={() => navigation.navigate('Students')}
+                onPress={() => navigation.navigate('StudentsScreen')}
               >
                 <Text style={styles.actionIcon}>👥</Text>
                 <Text style={styles.actionText}>Manage Students</Text>
+              </TouchableOpacity>
+               <TouchableOpacity
+                style={styles.actionButton}
+                onPress={() => navigation.navigate('ReportsAnalytics')}
+              >
+                <Text style={styles.actionIcon}>✅</Text>
+                <Text style={styles.actionText}>Reports & Analytics</Text>
               </TouchableOpacity>
             </View>
           </View>

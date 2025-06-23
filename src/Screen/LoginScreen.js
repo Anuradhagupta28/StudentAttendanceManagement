@@ -17,7 +17,7 @@ const LoginScreen = ({ navigation }) => {
 
   const handleLogin = () => {
     // Add authentication logic here
-    navigation.replace('Dashboard');
+    navigation.replace('DashboardScreen');
   };
 
   return (
